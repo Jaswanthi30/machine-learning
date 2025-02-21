@@ -1,7 +1,6 @@
 Data Preprocessing
-1.Dropping Unnecessary Columns
-• Removed "company_id", "company_name", "last_funding_date", and "hiring_roles" due to: 
-
+1.Dropping Unnecessary Columns:
+Removed "company_id", "company_name", "last_funding_date", and "hiring_roles" due to: 
 •	company_id" is just an identifier. 
 •	company_name" is redundant and ineffective for prediction. 
 •	"last_funding_date" is a date column that was not converted to numerical characteristics. 
@@ -18,7 +17,7 @@ Numerical Columns: The values that are missing have been substituted with the me
 • Missing values in numerical attributes have been replaced with the median value to prevent data loss as well as outliers.
 • To maintain consistency, the test sample uses the training data's median values.
 
-Feature Engineering
+Feature Engineering:
 •	We explicitly define features by excluding is_hot_lead (the target variable) as well as remove unnecessary columns. Although rudimentary, other feature design strategies that might boost model performance include: 
 •	 Establishing a standard numerical characteristics can increase stability of models
 •	 Feature Interactions: Integrating preexisting features, including as funding per employee. 
@@ -70,8 +69,8 @@ Recall
       • Excellent recall results in fewer false negatives (missing hot leads).
 
 
-     Confusion matrix:
-• The confusion matrix visualizes how well the model performed by displaying reliable and unreliable forecasts for "Hot Lead" and "Not Hot Lead." The heatmap clearly shows True Positives, True Negatives, False Positives, and False Negatives, making it simple to evaluate categorization efficiency. An successful model will have higher values along the diagonal (correct predictions), whereas misclassifications (off-diagonal values) highlight chances of development.
+Confusion matrix:
+The confusion matrix visualizes how well the model performed by displaying reliable and unreliable forecasts for "Hot Lead" and "Not Hot Lead." The heatmap clearly shows True Positives, True Negatives, False Positives, and False Negatives, making it simple to evaluate categorization efficiency. An successful model will have higher values along the diagonal (correct predictions), whereas misclassifications (off-diagonal values) highlight chances of development.
 
   Prediction & Submission
 •	 Model makes predictions on the test dataset.
